@@ -1,0 +1,63 @@
+# ── Node modules (reinstalled inside Docker) ─────────────────────────────────
+node_modules
+dashboard/node_modules
+
+# ── React build output (built inside Docker) ──────────────────────────────────
+public/app
+
+# ── Environment / secrets ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.*
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Runtime data ──────────────────────────────────────────────────────────────
+pids
+*.pid
+*.seed
+*.pid.lock
+temp/*
+!temp/.gitkeep
+backups/*
+!backups/.gitkeep
+
+# ── Auth / session (generated at runtime) ─────────────────────────────────────
+auth_info_baileys/
+test.js
+
+# ── Git ───────────────────────────────────────────────────────────────────────
+.git
+.gitignore
+.gitattributes
+.github/
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── CI / CD ───────────────────────────────────────────────────────────────────
+.gitlab-ci.yml
+.dockerignore
+docker-compose*.yml
+
+# ── Docs / misc ───────────────────────────────────────────────────────────────
+README.md
+docs/
+*.md
+.editorconfig
+.prettierrc
+.eslintrc*
+coverage
+.nyc_output
+Procfile
